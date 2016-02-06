@@ -9,7 +9,7 @@ before_install:
 install:
   # Add ansible.cfg to pick up roles path.
   - "{ echo '[defaults]'; echo 'roles_path = ../'; } >> ansible.cfg"
-  - ansible-galaxy install tomc603.ntp
+  - ansible-galaxy install donbowman.ntp
 
 script:
   # Check syntax
