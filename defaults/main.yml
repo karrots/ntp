@@ -8,6 +8,9 @@ ntp_restrict:
   - "restrict 127.0.0.1"
   - "restrict ::1"
 
+ntp_interface_ignore: []
+ntp_interface_listen: [all]
+
 ntp_crypto: no
 ntp_includefile: no
 ntp_keys: no

@@ -34,6 +34,9 @@ them are as follows. See the NTP configuration documentation for details:
 	  - "restrict 127.0.0.1"
 		- "restrict ::1"
 
+        ntp_interface_ignore: [all]
+        ntp_interface_listen: [eth0, eth1]
+
 	ntp_crypto: no
 	ntp_includefile: no
 	ntp_keys: no

@@ -48,3 +48,11 @@ broadcastclient
 {% if ntp_multicastclient %}
 multicastclient {{ ntp_multicastclient }}
 {% endif %}   
+
+{% for i in ntp_interface_ignore %}
+interface ignore {{ i }}
+{% endfor %}
+
+{% for i in ntp_interface_listen %}
+interface listen {{ i }}
+{% endfor %}
