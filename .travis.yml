@@ -24,3 +24,4 @@ script:
     | grep -q 'changed=0.*failed=0'
     && (echo 'Idempotent Check: OK'; exit 0)
     || (echo 'Idempotent Check: FAIL'; exit 1)
+
