@@ -5,7 +5,7 @@
 
 - name: Install the required packages
   apt: name={{ item }} state=present
-  with_items: ntp_pkgs
+  with_items: "{{ntp_pkgs}}"
 
 - name: Copy the ntp.conf template file
   template: src=ntp.conf.j2 dest=/etc/ntp.conf
